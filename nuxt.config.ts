@@ -1,4 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
+    css: ['~/assets/main.scss'],
+    styleResources: {
+        scss: ['./assets/variables/*.scss']
+    },
+    build: {
+        loaders: {
+            scss: {
+                additionalData: "@import './assets/variables/_colors.scss';"
+            }
+        }
+    }
 })
