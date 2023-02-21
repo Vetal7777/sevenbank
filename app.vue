@@ -1,9 +1,21 @@
 <template>
-    <Header />
-    <slot />
+    <div class="init__backround">
+        <div class="init__container">
+            <NuxtLayout>
+            </NuxtLayout>
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">
+import { UserStore } from './stores/UserStore';
+
+const config = useRuntimeConfig();
+const userStore = UserStore();
+const code = ref();
+onMounted(async () => {
+    const { data } = await useFetch(config.public.baseUrlUsers + '/1');
+})
 </script>
 
 <style lang="scss" scoped>

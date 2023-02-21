@@ -1,8 +1,8 @@
 <template>
     <div class="logo__container">
-        <a class="logo__link" href="#">
+        <nuxt-link class="logo__link" :to="'/'">
             sevenbank
-        </a>
+        </nuxt-link>
     </div>
 </template>
 

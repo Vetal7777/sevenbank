@@ -1,12 +1,9 @@
 <template>
     <div class="header__container">
         <Logo />
+        <BalanceSummary />
     </div>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style lang="scss" scoped>
 .header {

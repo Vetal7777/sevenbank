@@ -1,5 +1,11 @@
 export default defineNuxtConfig({
+    modules: [
+        '@pinia/nuxt',
+    ],
     css: ['~/assets/main.scss'],
+    runtimeConfig: {
+        public: { baseUrlUsers: '' }
+    },
     styleResources: {
         scss: ['./assets/variables/*.scss']
     },

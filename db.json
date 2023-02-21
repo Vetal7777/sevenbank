@@ -1,0 +1,19 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "userInfo": {
+                "firstname": "Vitalii",
+                "surname": "Kuznetsov",
+                "email": "jobschildren@gmail.com",
+                "phone": 380931612380,
+                "tg": "@vetal7777",
+                "inst": "https://www.instagram.com/vetal7777/",
+                "fb": null,
+                "photo": null
+            },
+            "summeryBalance": 200000,
+            "currency": "UAH"
+        }
+    ]
+}
